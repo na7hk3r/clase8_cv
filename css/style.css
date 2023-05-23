@@ -9,7 +9,7 @@ body {
     max-width: 800px;
 }
 
-img {
+#profile {
     width: 30%;
     height: auto;
     border-radius: 50%;
@@ -57,4 +57,21 @@ footer {
 a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+ul, dl, p {
+    font-size: 1.2rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons img {
+    width: 1.2rem;
+    height: auto;
+    margin: .5rem;
+    filter: invert(100%) sepia(0%) saturate(7401%) hue-rotate(173deg) brightness(111%) contrast(94%);
 }
