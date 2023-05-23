@@ -1,20 +1,27 @@
 body {
-    background-color: #1F1F1F;
+    background: linear-gradient(#1f1f1f, #424242, #1f1f1f);
     color: #FFFFFF;
     max-width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 1.8rem;
+    max-width: 800px;
 }
 
-img {
+#profile {
     width: 30%;
     height: auto;
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: .5s ease;
+}
+
+#profile:hover{
+    box-shadow: 0 0 0 10px #3e8d92;
+    transition: .5s ease;
 }
 
 h1 {
@@ -26,6 +33,7 @@ h1, h2 {
     text-align: center;
     line-height: 1.5;
     letter-spacing: .2rem;
+    padding: .5rem;
 }
 
 h2 {
@@ -38,10 +46,10 @@ ul > li > span {
 }
 
 dl > dt {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-footer > p {
+footer {
     background-color: #3e8d92;
     text-align: center;
 }
@@ -49,4 +57,21 @@ footer > p {
 a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+ul, dl, p {
+    font-size: 1.2rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons img {
+    width: 1.2rem;
+    height: auto;
+    margin: .5rem;
+    filter: invert(100%) sepia(0%) saturate(7401%) hue-rotate(173deg) brightness(111%) contrast(94%);
 }
