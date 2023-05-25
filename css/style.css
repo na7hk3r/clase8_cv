@@ -2,15 +2,68 @@ body {
     background: linear-gradient(#1f1f1f, #424242, #1f1f1f);
     color: #FFFFFF;
     max-width: 80%;
+    max-height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 1.8rem;
-    max-width: 800px;
+}
+
+/*      Header      */
+header {
+    background-image: url(/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1,
+h2 {
+    background-color: #3e8d92;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    letter-spacing: .2rem;
+    padding: .5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3e8d92;
 }
 
 #profile {
-    width: 30%;
+    width: 25%;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -19,39 +72,23 @@ body {
     transition: .5s ease;
 }
 
-#profile:hover{
+#profile:hover {
     box-shadow: 0 0 0 10px #3e8d92;
     transition: .5s ease;
 }
 
-h1 {
-    margin-bottom: 100px;
-}
-
-h1, h2 {
-    background-color: #3e8d92;
-    text-align: center;
-    line-height: 1.5;
-    letter-spacing: .2rem;
-    padding: .5rem;
-}
-
-h2 {
-    text-align: left;
-}
-
-ul > li > span {
+/*      Datos Personales      */
+ul>li>span {
     font-style: italic;
     font-weight: bold;
 }
 
-dl > dt {
+dl>dt {
     font-weight: bolder;
 }
 
-footer {
-    background-color: #3e8d92;
-    text-align: center;
+span {
+    padding-top: 5px;
 }
 
 a {
@@ -59,8 +96,25 @@ a {
     text-decoration: none;
 }
 
-ul, dl, p {
+ul,
+dl,
+p {
     font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+dt, dd{
+    margin-bottom: 1rem;
+}
+
+/*      Footer      */
+footer {
+    background-color: #3e8d92;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icons {
@@ -75,3 +129,15 @@ ul, dl, p {
     margin: .5rem;
     filter: invert(100%) sepia(0%) saturate(7401%) hue-rotate(173deg) brightness(111%) contrast(94%);
 }
+
+/*      Sobre Mi        */
+.sobremi-seccion {
+    justify-content: center;
+    text-align: justify;
+    padding: 5%;
+}
+
+    .sobremi-seccion h2{
+        text-align: center;
+        font-size: 3rem;
+    }
